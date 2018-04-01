@@ -21,11 +21,8 @@ two images.
 #### HYBRID RESULTS
 
 
-As Shown in the results above, when we combine the low frequency portion of the first image and the high frequency
-portion of the second image, we can obtain an hybrid image with some interesting properties. When we observe the
-hybrid image in a close distance or in a large scale, the high frequency portion of the image will dominate the image,
-which makes it difficult for us to observe the low frequency portion. In contrast, if we observe the hybrid image from a far
-distance or scale down the image, the low frequency portion of the image will dominate the image instead.
+As Shown in the results above, when combining the low frequency portion of the first image and the high frequency
+portion of the second image, there is an hybrid image with some interesting properties. People may observe the hybrid image in a close distance or in a large scale, the high frequency portion of the image will dominate the image, which makes it difficult for us to observe the low frequency portion. In contrast, if people observe the hybrid image from a far distance or scale down the image, the low frequency portion of the image will dominate the image instead.
 
 #### FAST FOURIER TRANSFORM AND CUT-OFF FREQUENCY ANALYSIS
 
@@ -33,9 +30,8 @@ distance or scale down the image, the low frequency portion of the image will do
 The Fourier Transform of an image decomposes the image into its sine and cosine components. The Fourier Transform of
 an image maps an image from the spatial domain to the frequency domain. In the frequency domain, each point
 represents the corresponding frequency contained in the spatial domain. In the spatial domain, edges are considered to
-be high frequency portions of the image, and the higher the frequency further from the origin it will be registered in the
-frequency domain. Things like big blobs of color are the low frequency portion of the image, and they will be registered
-near the origin in the frequency domain.
+be high frequency portions of the image, and the higher the frequency further from the origin it will be accommodated in the
+frequency domain. Things like big blobs of color are the low frequency portion of the image, and they will be placed near the origin in the frequency domain.
 
 For the image of the female that is used for the low frequency portion, we can see that when the cut-off
 frequency/standard deviation increases the image becomes increasingly blurry, as a consequence, less and less points
@@ -45,7 +41,7 @@ representing higher frequency pixels distant from the vertical and horizontal li
 the cut-off frequency the structure becomes more and more ambiguous and will eventually become hard to identify.
 
 For the image of the dog that is used for the high frequency portion, the outcomes are reversed since to obtain the high
-frequency portion of the image we’re subtracting the low frequency portion from the original image. As the cut-off
+frequency portion of the image, the algorithm removes the low frequency portion from the original image. As the cut-off
 frequency increases, more and more details of the dog can be seen, where originally, we can only see some edges of the
 dog. This is because when the cut-off frequency increases, the low-pass version of the image will be blurrier and contain
 less high frequency information, so that when the low-pass version image is subtracted from the original image, more
