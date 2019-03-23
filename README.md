@@ -6,7 +6,7 @@ There are two parts in this project, in part 1 our goal is to create hybrid imag
 SIGGRAPH 2006 paper by Oliva, Torralba, and Schyns. In part 2, we perform different tasks for image enhancement,
 including contrast enhancement, color enhancement, and color shift.
 
-#### PART 1
+### PART 1
 
 #### CREATING HYBRID IMAGES
 
@@ -52,7 +52,7 @@ at the image close we tend to ignore the blurrier part of the images as nature a
 we observe the image from far away or resize the image to be very small, the original hybrid image is re-interpolated in
 our brain, the blurry low frequency edges become sharp again and details of the information will be disposed.
 
-#### PART 2
+### PART 2
 
 #### CONTRAST ENHANCEMENT
 
@@ -60,8 +60,7 @@ our brain, the blurry low frequency edges become sharp again and details of the 
 
 #### Contrast enhanced Image 1
 
-
-Original Image 2
+#### Original Image 2
 
 As we can see in the original images, the colors are relatively pale and dusky, in the histogram figure, we can see that the
 intensity of the pixels are concentrated in the mid-range area in the grey scale, resulting in the image to be overcast. After
